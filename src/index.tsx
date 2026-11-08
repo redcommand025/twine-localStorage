@@ -16,6 +16,7 @@ if (installStorageFallback()) {
 		'lost when this tab closes or reloads. Use Library > Archive (or ' +
 		'Build > Publish to File) to download your stories before leaving.';
 	document.body.appendChild(banner);
+	window.setTimeout(() => banner.remove(), 15000);
 }
 
 ReactDOM.render(
